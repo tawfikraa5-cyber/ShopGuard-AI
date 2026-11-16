@@ -1,0 +1,14 @@
+{
+  "previous_every_frame": {
+    "seconds": 18.498,
+    "detector_frames": 180,
+    "pose_frames": 0
+  },
+  "balanced_sampled_plus_pose": {
+    "seconds": 3.617,
+    "detector_frames": 36,
+    "pose_frames": 12
+  },
+  "speedup": 5.11,
+  "scope": "same 6s source segment, warm CPU inference only; excludes decoding, database and snapshots"
+}

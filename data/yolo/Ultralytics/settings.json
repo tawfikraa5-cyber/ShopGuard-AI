@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "C:\\Users\\tawfi\\OneDrive\\Desktop\\Documents\\ra9ib\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "13b19c20bd6ca50d706faa5ba09e16f3b0f473dbd5eb5e2961d2d3dd21d314fb",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

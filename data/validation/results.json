@@ -1,0 +1,228 @@
+[
+  {
+    "file": "Shoplifting033_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting033_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش."
+    ],
+    "people": 3,
+    "second": 29.5,
+    "frame": "/media/snapshots/validation-033-1794748090-preview-1.jpg",
+    "processed_frames": 180,
+    "pose_frames": 60,
+    "scene_cuts": [],
+    "elapsed_seconds": 30.76,
+    "speed": 0.97,
+    "alerts": 4,
+    "tracked_roi_records": 6,
+    "hand_observations": 4,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting050_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting050_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش."
+    ],
+    "people": 2,
+    "second": 83.5,
+    "frame": "/media/snapshots/validation-050-1794748165-preview-1.jpg",
+    "processed_frames": 502,
+    "pose_frames": 168,
+    "scene_cuts": [],
+    "elapsed_seconds": 57.25,
+    "speed": 1.46,
+    "alerts": 9,
+    "tracked_roi_records": 32,
+    "hand_observations": 14,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting048_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting048_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش.",
+      "تبدلات زاوية الكاميرا؛ تأكد أن المنطقة المحددة مازال كتوافق المكان اللي بغيتي."
+    ],
+    "people": 5,
+    "second": 103.5,
+    "frame": "/media/snapshots/validation-048-1794748341-preview-1.jpg",
+    "processed_frames": 622,
+    "pose_frames": 207,
+    "scene_cuts": [
+      48.83,
+      51.83
+    ],
+    "elapsed_seconds": 76.37,
+    "speed": 1.36,
+    "alerts": 15,
+    "tracked_roi_records": 43,
+    "hand_observations": 52,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting001_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting001_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش."
+    ],
+    "people": 1,
+    "second": 144.5,
+    "frame": "/media/snapshots/validation-001-1794748417-preview-1.jpg",
+    "processed_frames": 869,
+    "pose_frames": 176,
+    "scene_cuts": [],
+    "elapsed_seconds": 85.84,
+    "speed": 1.69,
+    "alerts": 3,
+    "tracked_roi_records": 20,
+    "hand_observations": 10,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting051_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting051_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش."
+    ],
+    "people": 4,
+    "second": 240.5,
+    "frame": "/media/snapshots/validation-051-1794748503-preview-1.jpg",
+    "processed_frames": 1444,
+    "pose_frames": 482,
+    "scene_cuts": [],
+    "elapsed_seconds": 147.24,
+    "speed": 1.63,
+    "alerts": 18,
+    "tracked_roi_records": 47,
+    "hand_observations": 6,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting044_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "source_name": "Shoplifting044_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش.",
+      "تبدلات زاوية الكاميرا؛ تأكد أن المنطقة المحددة مازال كتوافق المكان اللي بغيتي."
+    ],
+    "people": 3,
+    "second": 485.0,
+    "frame": "/media/snapshots/validation-044-1794748651-preview-1.jpg",
+    "processed_frames": 2911,
+    "pose_frames": 902,
+    "scene_cuts": [
+      1.0
+    ],
+    "elapsed_seconds": 402.56,
+    "speed": 1.21,
+    "alerts": 13,
+    "tracked_roi_records": 29,
+    "hand_observations": 31,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  },
+  {
+    "file": "Shoplifting005_x264.mp4",
+    "status": "complete",
+    "progress": 100,
+    "message": "التحليل سالا. راجع أسباب التنبيهات والمقاطع.",
+    "engine_version": "activity-cues-v3",
+    "source_name": "Shoplifting005_x264.mp4",
+    "source_size": [
+      320,
+      240
+    ],
+    "source_fps": 30.0,
+    "sample_fps": 6.0,
+    "profile": "balanced",
+    "device": "cpu",
+    "warnings": [
+      "الدقة الأصلية ضعيفة؛ تفاصيل اليدين والسلعة تقدر ما تبانش.",
+      "تبدلات زاوية الكاميرا؛ تأكد أن المنطقة المحددة مازال كتوافق المكان اللي بغيتي."
+    ],
+    "analysis_config": {
+      "zone": [
+        0.1,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "dwell_seconds": 8,
+      "min_confidence": 0.4
+    },
+    "people": 1,
+    "second": 65.5,
+    "frame": "/media/snapshots/validation-005-1794750638-preview-2.jpg",
+    "processed_frames": 394,
+    "pose_frames": 132,
+    "scene_cuts": [
+      11.0,
+      60.17
+    ],
+    "elapsed_seconds": 58.15,
+    "speed": 1.13,
+    "alerts": 6,
+    "tracked_roi_records": 21,
+    "hand_observations": 14,
+    "accuracy": "not_measured_no_temporal_ground_truth_or_negative_control_set"
+  }
+]
