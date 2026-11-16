@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar-MA" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a101b" />
+    <title>ShopGuard AI — مراقبة المحل</title>
+    <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="ShopGuard AI"
+        ><img src="/assets/mark.svg" alt="" /><span dir="ltr">ShopGuard <b>AI</b></span></a
+      ><span class="local-status"><i></i> معالجة محلية</span>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div>
+          <h1>مراقبة المحل</h1>
+          <p>شغّل الكاميرا أو اختار فيديو، وراجع الحركة اللي خاصّها انتباهك.</p>
+        </div>
+        <div class="source-actions">
+          <button class="button primary" id="start-camera">كاميرا مباشرة</button
+          ><button class="button" id="choose-video">
+            اختار فيديو <span data-icon="upload"></span>
+          </button>
+        </div>
+      </div>
+      <p class="mode-note" id="mode-note"></p>
+      <div class="monitor-layout">
+        <section class="camera-panel panel">
+          <div class="panel-heading">
+            <h2>الفيديو</h2>
+            <select id="saved-runs" aria-label="الفيديوهات اللي تحللات" hidden></select
+            ><span class="pill" id="camera-status">معاينة تجريبية</span>
+          </div>
+          <div class="camera-stage" id="camera-stage"></div>
+          <details class="review-tools" id="review-tools" hidden>
+            <summary>أدوات المراجعة الدقيقة</summary>
+            <div class="player-tools">
+              <button type="button" data-player="replay">عاود المقطع ↺</button
+              ><button type="button" data-player="back">← خطوة</button
+              ><button type="button" data-player="forward">خطوة →</button
+              ><label
+                >السرعة
+                <select id="review-rate">
+                  <option value="0.25">0.25×</option>
+                  <option value="0.5">0.5×</option>
+                  <option value="1" selected>1×</option>
+                  <option value="1.5">1.5×</option>
+                  <option value="2">2×</option>
+                </select></label
+              ><label><input type="checkbox" id="review-context" /> شوف 30 ثانية ديال السياق</label>
+            </div>
+            <p id="frame-help">الخطوات الصغيرة كتعاونك تراجع حركة قصيرة.</p>
+          </details>
+          <div class="camera-info">
+            <span id="source-name">المشهد التجريبي</span><span id="people-count"></span>
+          </div>
+          <div class="live-controls" id="live-controls" hidden>
+            <label
+              >الكاميرا
+              <select id="live-device" aria-label="اختيار الكاميرا"></select></label
+            ><label
+              >نبّهني من بعد
+              <input
+                type="number"
+                id="live-dwell"
+                min="1"
+                max="300"
+                value="15"
+                aria-label="مدة البقاء فالكاميرا بالثواني"
+              />
+              ثانية</label
+            >
+            <p>جرّ فوق الصورة باش تحدّد المنطقة. الصوت مطفي، وكيتحفظو غير صور التنبيهات.</p>
+          </div>
+          <div class="progress-section" id="progress-section" hidden>
+            <div><span id="job-message"></span><strong id="job-percent"></strong></div>
+            <progress id="job-progress" max="100" value="0"></progress>
+            <p class="quality-note" id="quality-note"></p>
+            <button class="skip-review" id="cancel-analysis" hidden>
+              وقف التحليل واحتافظ بالنتائج
+            </button>
+          </div>
+          <div class="video-setup" id="video-setup" hidden>
+            <div class="setup-hint">
+              <span data-icon="target"></span
+              ><span>جرّ فوق الفيديو باش تحدّد المنطقة اللي بغيتي تراقب.</span>
+            </div>
+            <div class="start-row">
+              <label
+                >نبّهني من بعد
+                <input
+                  id="dwell-seconds"
+                  type="number"
+                  min="1"
+                  max="300"
+                  step="1"
+                  value="15"
+                  aria-label="مدة البقاء بالثواني"
+                />
+                ثانية فالمنطقة</label
+              ><label
+                >طريقة التحليل
+                <select id="analysis-profile">
+                  <option value="fast">سريع</option>
+                  <option value="balanced" selected>متوازن</option>
+                  <option value="detail">تفاصيل أكثر</option>
+                </select></label
+              ><button class="button primary" id="start-analysis">
+                بدا التحليل <span data-icon="play"></span>
+              </button>
+            </div>
+            <p class="sampling-note">
+              السريع كياخذ عينات أقل وقد يفوّت حركة قصيرة؛ تفاصيل أكثر كتحتاج وقت أطول.
+            </p>
+          </div>
+        </section>
+        <section class="alerts-panel panel">
+          <div class="panel-heading">
+            <h2>التنبيهات</h2>
+            <button class="undo-review" id="undo-review" hidden title="Ctrl+Z">
+              تراجع عن آخر قرار ↶</button
+            ><span class="count" id="pending-count">0</span>
+          </div>
+          <div class="alerts-content" id="alerts-content"></div>
+          <p class="responsibility">
+            <span data-icon="shield"></span>هاد التنبيهات للمراجعة، ماشي دليل على السرقة.
+          </p>
+        </section>
+      </div>
+      <p class="bottom-note">
+        الكاميرا والفيديو كيتحللو محلياً، بلا تعرّف على الوجوه. القرار الأخير عندك.
+      </p>
+    </main>
+    <input
+      id="video-input"
+      type="file"
+      accept="video/mp4,video/quicktime,video/x-msvideo,video/webm"
+      hidden
+    />
+    <div class="toast" id="toast" role="status"></div>
+    <script src="/review.js"></script>
+    <script src="/camera.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
